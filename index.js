@@ -49,7 +49,6 @@ app.post('/signup',  async (req, res) => {
 app.get('/signout', (req, res) => {
     req.session = null;
     res.send('You are logged out')
-    res.redirect('/signin');
 
 })
 
@@ -70,11 +69,16 @@ app.post('/signin', async (req, res) => {
     const { email, password } = req.body;
     const user = await usersRepo.getOneBy({ email });
     if (!user) {
-        return res.send('Email not found');
-    }
-    if (user.password !== password) {
         return res.send('Invalid Credentials');
     }
+    const validPassword = await usersRepo.comparePasswords(
+        user.password,
+         password
+         );
+    if (!validPassword) {
+        return res.send('Invalid Credentials');
+    }
+    
     req.session.userId = user.Id;
     res.send('You are signed in!!!')
 })

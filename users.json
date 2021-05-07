@@ -1,8 +1,5 @@
 [
   {
-    "email": "test@test.com"
-  },
-  {
     "email": "bash@bash.com",
     "password": "password",
     "id": "386d9bdd"
@@ -31,5 +28,15 @@
     "email": "test3@test.com",
     "password": "password",
     "id": "8d53278c"
+  },
+  {
+    "email": "baba@baba",
+    "password": "5bb6bcf18525b312cd299cf330a8f27e89b67e969f40de5df7567b4c98426290ebbe128cea50321630cf71eaa3b5eab9c32b7e30e5c133ec03033871d704b1b5.91579c92c2198b0f794bbc5ede477505",
+    "id": "e08c8d0f"
+  },
+  {
+    "email": "bashir@bashir",
+    "password": "e86fcc18a848571d4a3ef66167d84d2f7f0567b4b6a83f09427ff460d122196641216a2744ac0fb4707ab3c743d1f75788161b29a8a0ec1a92217220c574ed6b.b393c7b6056d74314a02388f59c7a3aa",
+    "id": "d53fc792"
   }
 ]

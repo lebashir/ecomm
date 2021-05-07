@@ -26,5 +26,10 @@
     "email": "jo@jo.co",
     "password": "password",
     "id": "432e0f73"
+  },
+  {
+    "email": "test3@test.com",
+    "password": "password",
+    "id": "8d53278c"
   }
 ]
